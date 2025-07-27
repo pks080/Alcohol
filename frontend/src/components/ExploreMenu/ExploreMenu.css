@@ -1,0 +1,108 @@
+/* 🧃 Container for Explore Menu */
+.explore-menu {
+  background: linear-gradient(135deg, #240046, #ff85b3);
+  padding: 50px 30px;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 4px 25px rgba(255, 105, 180, 0.2);
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* 🥂 Title */
+.explore-title {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #fff176;
+  font-family: 'Outfit', cursive;
+  margin-bottom: 16px;
+}
+
+/* 🍹 Subtitle */
+.explore-subtext {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ffecb3;
+  max-width: 700px;
+  margin: 0 auto 35px auto;
+  line-height: 1.6;
+}
+
+/* 🍸 Menu List Container */
+.explore-menu-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* 🥃 Each Menu Card */
+.explore-menu-item {
+  flex: 1 1 140px;
+  max-width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.explore-menu-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.explore-menu-item img:hover {
+  transform: scale(1.08);
+}
+
+/* 🍷 Active category */
+.explore-menu-item .active {
+  border: 4px solid #ff4081;
+  box-shadow: 0 0 15px rgba(255, 64, 129, 0.5);
+}
+
+.menu-label {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+
+.divider {
+  margin-top: 50px;
+  height: 2px;
+  background-color: #ff85b3;
+  border: none;
+}
+
+/* 🍻 Responsive Tweaks */
+@media (max-width: 900px) {
+  .explore-menu-item {
+    flex: 1 1 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .explore-menu-item {
+    flex: 1 1 45%;
+  }
+  .explore-subtext {
+    font-size: 1rem;
+  }
+  .explore-title {
+    font-size: 2rem;
+  }
+  .menu-label {
+    font-size: 0.95rem;
+  }
+}

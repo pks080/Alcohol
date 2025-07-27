@@ -1,0 +1,65 @@
+/* 🍔 Container for food/alcohol display */
+.food-display {
+  margin-top: 50px;
+  padding: 30px 20px;
+  background: linear-gradient(145deg, #1b0034, #e91e63);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.3);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🍸 Heading */
+.eco-heading {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #fff8e1;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 30px;
+}
+
+/* 🍕 Item Grid */
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* 💡 Dark theme override */
+:root .eco-heading {
+  color: #ffe0f7;
+}
+
+:root .food-display {
+  background: linear-gradient(145deg, #0d001a, #e91e63);
+}
+
+/* 🌤 Light theme support */
+.lightcolors .eco-heading {
+  color: #2e003e;
+}
+
+.lightcolors .food-display {
+  background: linear-gradient(to bottom right, #ffeff7, #ffb0d4);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .eco-heading {
+    font-size: 2rem;
+  }
+
+  .food-display-list {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-heading {
+    font-size: 1.7rem;
+  }
+
+  .food-display {
+    padding: 20px 10px;
+  }
+}

@@ -1,0 +1,114 @@
+.footer {
+  color: #ffeaf2;
+  background-color: #1e1b2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 50px 8vw 30px;
+  margin-top: 80px;
+  font-family: 'Segoe UI', sans-serif;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 -4px 12px rgba(255, 192, 203, 0.2);
+}
+
+.footer-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-description {
+  font-size: 16px;
+  color: #ffdbe7;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  color: #ffaad4;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-content-center li,
+.footer-content-right li {
+  list-style: none;
+  color: #ffe6f2;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-content-center li:hover,
+.footer-content-right li:hover {
+  color: #ff7bb0;
+}
+
+.footer-social-icons img {
+  cursor: pointer;
+  width: 30px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.logo-footer {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: #ff7bb0;
+  border: none;
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #fcd3e0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+    display: flex;
+  }
+}

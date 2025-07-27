@@ -1,0 +1,158 @@
+/* === 🍕 FUNKY FOOD ITEM CARD STYLING === */
+.food-item {
+  width: 100%;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-item:hover {
+  transform: scale(1.02);
+}
+
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.food-item-img-container .add {
+  width: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  padding: 6px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.food-item-img-container .add:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.food-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item-counter img {
+  width: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.food-item-counter img:hover {
+  transform: scale(1.15);
+}
+
+.cartitemsp {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2e7d32;
+}
+
+.food-item-info {
+  padding: 15px 20px;
+  background: #fdfdfd;
+  border-radius: 0 0 16px 16px;
+}
+
+.food-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.namewe {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4e342e;
+}
+
+.ratingstars {
+  width: 90px;
+}
+
+.food-item-desc {
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 500;
+  color: #444;
+}
+
+.food-item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+/* === DARK MODE FIX === */
+:root .namewe,
+:root .cartitemsp,
+:root .food-item-price,
+:root .food-item-desc {
+  color: #ffffff;
+}
+
+:root .food-item-info,
+:root .food-item-counter {
+  background-color: #222;
+}
+
+:root .food-item-img-container .add {
+  background: #111;
+}
+
+/* === LIGHT MODE FIX === */
+.lightcolors .namewe,
+.lightcolors .cartitemsp,
+.lightcolors .food-item-price,
+.lightcolors .food-item-desc {
+  color: #4e342e;
+}
+
+.lightcolors .food-item-info,
+.lightcolors .food-item-counter {
+  background-color: #ffffff;
+}
+
+.lightcolors .food-item-img-container .add {
+  background-color: #f0f0f0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .food-item-image {
+    height: 160px;
+  }
+  .namewe {
+    font-size: 1.2rem;
+  }
+  .food-item-desc {
+    font-size: 0.95rem;
+  }
+  .food-item-price {
+    font-size: 1.1rem;
+  }
+  .ratingstars {
+    width: 70px;
+  }
+}

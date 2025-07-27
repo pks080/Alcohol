@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 🍷 Dark Mode Default */
+:root {
+  --body-color: #0e0013;
+  --light-text: #ffffff;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--light-text);
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent content from going outside */
+}
+
+/* 🧭 Anchor tag reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px; /* adds space below fixed navbar */
+  max-width: 1200px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
